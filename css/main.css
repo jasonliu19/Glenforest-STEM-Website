@@ -118,7 +118,7 @@ body{
 }
 
 .home{
-  background-image:url("img/aud bg.jpg");
+  background-image:url("../img/aud bg.jpg");
   background-repeat:no-repeat;
   background-attachment:fixed;
   background-size:cover;
@@ -126,7 +126,7 @@ body{
 }
 
 .colored{
-  background-image:url("img/graphic bg.png");
+  background-image:url("../img/graphic bg.png");
   background-repeat:no-repeat;
   background-attachment:fixed;
   background-size:cover;
