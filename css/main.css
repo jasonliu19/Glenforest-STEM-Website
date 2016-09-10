@@ -12,6 +12,119 @@ html,body{
 body{
   margin:0 auto;
   font-family:Raleway,Arial,sans-serif;
+  padding-top:60px;
+}
+
+/*nav styling from http://stackoverflow.com/questions/18529274/change-navbar-color-in-twitter-bootstrap-3*/
+
+/* navbar */
+.navbar-default {
+    background-color:#FFF;
+    border-color:#6C7A89;
+}
+
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: #777;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #333;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #E7E7E7;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #D5D5D5;
+}
+
+/* mobile version */
+.navbar-default .navbar-toggle {
+  border:none;
+  outline:none;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus{
+  background-color:transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color:#6C7A89;
+}
+
+.navbar-brand {
+  padding:0;
+}
+.navbar-brand>img {
+  height:100%;
+  padding:0;
+  width: auto;
+}
+
+.navbar-inner{
+  padding:10px;
+}
+
+hr {
+  border-color:#FFF;
+  border-width:1px;
+  max-width:200px;
+}
+
+/*hr.light {
+  border-color:#FFF;
+}*/
+
+header {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  background-image: url('../img/aud bg.jpg');
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-size:auto 100%;
+  background-position:center;
+  text-align:center;
+  color: white;
+}
+header .header-content {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 0 50px;
+}
+header .header-content .header-content-inner {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+header .header-content .header-content-inner h1 {
+  font-weight: 700;
+  margin-top:0;
+  margin-bottom:0;
+  font-size:100px;
+}
+header .header-content .header-content-inner hr {
+  margin:60px auto;
+}
+header .header-content .header-content-inner p {
+  font-weight: 300;
+  font-size: 18px;
+  margin-bottom: 50px;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .anchor{
@@ -121,7 +234,7 @@ body{
   background-image:url("../img/aud bg.jpg");
   background-repeat:no-repeat;
   background-attachment:fixed;
-  background-size:cover;
+  background-size:auto 100%;
   background-position:center;
 }
 
@@ -129,7 +242,7 @@ body{
   background-image:url("../img/graphic bg.png");
   background-repeat:no-repeat;
   background-attachment:fixed;
-  background-size:cover;
+  background-size:auto 100%;
   background-position:center;
 }
 
@@ -386,4 +499,23 @@ th{
 
 #sponsors img{
   max-width:100%;
+}
+
+@media screen and (min-width:768px) {
+  .navbar .nav, .navbar .nav > li {
+    float:none;
+    display:inline-block;
+  }
+
+  header{
+    background-size:cover;
+  }
+
+  .colored{
+    background-size:cover;
+  }
+
+  .navbar-inner {
+    text-align:center;
+  }
 }
