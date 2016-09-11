@@ -25,12 +25,13 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!--<script async type="text/javascript" src="js/core.js"></script>-->
+    <script type="text/javascript" src="js/affix.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
   </head>
   <body>
     <a name="home" class="anchor"></a>
 
-    <nav class="navbar navbar-default navbar-fixed-top" align="center">
+    <nav class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="300" align="center">
       <div class="container-fluid navbar-inner">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
@@ -61,45 +62,7 @@
           <p>May 25,2017 | Pearson Convention Center</p>
     </header>
 
-    <!--<div class="container-fluid home" style="height:100%;">
-      <div class="row">
-        <div class="col-xs-12 vcenter">
-          <div class="centerColumn">
-            <h1>Glenforest STEM</h1>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-
-      </div>
-      <div class="row">
-
-      </div>
-      <div class="row">
-
-      </div>
-      <div class="row">
-
-      </div>
-    </div>-->
-
-    <!--
-    <div class="section home" id="top">
--->
-      <!--#title for JS to find position of title and add .scrolled to nav bar-->
-      <!--<div id="title" style="line-height:100%;">
-        <h1 style="font-size:7em;">
-          Glenforest STEM</h1>
-        <div class="separator ucolored" id="utitle"></div>
-        <p style="font-size:2.5em;">Canadian Youth STEM Conference</p>
-        <p style="font-size:1.5em;">May 25, 2017 | Pearson Convention Center</p>
-      </div>
-      <div>
-        <a href="#about"><div id="arrow"></div></a>
-      </div>
-    </div>-->
-
-    <!--<noscript id="deferred-styles">
+    <noscript id="deferred-styles">
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:700,500">
       <link rel="stylesheet" type="text/css" href="https://afeld.github.io/emoji-css/emoji.css">
     </noscript>
@@ -115,7 +78,7 @@
           webkitRequestAnimationFrame || msRequestAnimationFrame;
       if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
       else window.addEventListener('load', loadDeferredStyles);
-    </script>-->
+    </script>
 
     <!--ABOUT SECTION-->
     <div class="section white">
